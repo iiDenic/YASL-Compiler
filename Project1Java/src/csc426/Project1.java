@@ -16,9 +16,11 @@ public class Project1 {
 		Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
  		Token token;
 		do {
+			//Scan for the next token. Token type is handled below
 			token = scanner.next();
 			System.out.println(token);
 		} while (token.type != TokenType.EOF);
+		//When the end of file token is found, end the scanner
  		scanner.close();
 	}
 }
